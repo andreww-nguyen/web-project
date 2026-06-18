@@ -8,6 +8,8 @@
   width: 226px;
   z-index: 200;
   padding-right: 15px;
+  max-height: calc(100vh - 9rem);
+  overflow-y: auto;
 }
 
 .sidebar-section
@@ -40,6 +42,7 @@
 {
   display: flex;
   align-items: center;
+  padding-left: 2px;
 }
 
 .sidebar-link-home

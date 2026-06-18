@@ -13,7 +13,7 @@
   }
 }
 
-@media (mid-width: 751px) and (max-width: 1274px)
+@media (mid-width: 751px) and (max-width: 1999px)
 {
   .video-grid 
   {
@@ -21,7 +21,7 @@
   }
 }
 
-@media (min-width: 1275px)
+@media (min-width: 2000px)
 {
   .video-grid
   {
