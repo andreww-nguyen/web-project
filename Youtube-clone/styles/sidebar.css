@@ -1,22 +1,28 @@
-.sidebar
+.big-sidebar
 {
+  display: flex;
+  flex-direction: column;
   background-color: white;
   position: fixed;
-  left: 0px;
   bottom: 0px;
   top: 54px;
+  left: 0px;
   width: 226px;
   z-index: 200;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 12px;
   max-height: calc(100vh);
+  overflow-y: hidden;
+}
+
+.big-sidebar:hover
+{
   overflow-y: auto;
+  scrollbar-width: 5px;
 }
 
 .sidebar-section
 {
-  display: flex;
-  flex-direction: column;
+  width: 218px;
   align-items: center;
   padding: 12px 0px 12px 0px;
   border-bottom: 1px solid rgb(230, 230, 230);
@@ -103,11 +109,13 @@
   flex: 1;
 }
 
-#toggle:checked~.show-more .checked {
+#toggle:checked~.show-more .checked 
+{
   display: flex;
   flex: 1;
 }
 
-#toggle:checked~.show-more .unchecked {
+#toggle:checked~.show-more .unchecked 
+{
   display: none;
 }
