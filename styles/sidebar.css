@@ -385,11 +385,11 @@
   }
 
 
-    body:has(#hamburger:checked) .grey-background
-    {
-      z-index: 250;
-      opacity: 1;
-    }
+  body:has(#hamburger:checked) .grey-background
+  {
+    z-index: 250;
+    display: flex;
+  }
 }
 
 /* large sidebar when the screen is over 1350px */
