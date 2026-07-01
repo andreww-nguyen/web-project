@@ -36,7 +36,6 @@
   background-color: rgb(240, 240, 240);
 }
 
-
 .youtube-logo 
 {
   margin-left: 16px;
@@ -80,58 +79,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.create-button
-{
-  background-color: rgb(240, 240, 240);
-  padding-right: 14px;
-  padding-left: 13px;
-  border-radius: 20px;
-  position: relative;
-  border-style: none;
-  anchor-name: --create-button;
-
-  font-weight: 550;
-  font-size: 14px;
-  font-family: Roboto, Arial;
-}
-
-.create-button .icon-area
-{
-  width: 30px;
-}
-
-.create-button:hover
-{
-  background-color: rgb(225, 225, 225);
-  cursor: pointer;
-}
-
-.create-menu
-{
-  margin: 0px;
-  inset: auto;
-  padding: 0px;
-
-  width: 175px;
-  background-color: white;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  transition-delay: 0s;
-  border-style: none;
-  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.05);
-  border-radius: 15px;
-  position-anchor: --create-button;
-  top: anchor(bottom);
-  left: anchor(left);
-  margin-block-start: 7px;
-}
-
-.create-menu:popover-open
-{
-  display: flex;
-  flex-direction: column;
 }
 
 .search-button 
@@ -219,6 +166,61 @@
   flex-shrink: 0;
 }
 
+.create-button
+{
+  background-color: rgb(240, 240, 240);
+  padding-right: 14px;
+  padding-left: 13px;
+  border-radius: 20px;
+  position: relative;
+  border-style: none;
+  anchor-name: --create-button;
+
+  font-weight: 550;
+  font-size: 14px;
+  font-family: Roboto, Arial;
+}
+
+.create-button .icon-area
+{
+  width: 30px;
+}
+
+.create-button:hover
+{
+  background-color: rgb(225, 225, 225);
+  cursor: pointer;
+}
+
+.create-menu
+{
+  margin: 0px;
+  inset: auto;
+  padding: 0px;
+
+  width: 175px;
+  background-color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  transition-delay: 0s;
+  border-style: none;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  position-anchor: --create-button;
+  top: anchor(bottom);
+  left: anchor(left);
+  margin-block-start: 7px;
+  overscroll-behavior: contain;
+}
+
+.create-menu:popover-open
+{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
 .upload-icon
 {
   height: 24px;
@@ -283,6 +285,7 @@
   top: anchor(bottom);
   right: anchor(right);
   margin-top: 7px;
+  overscroll-behavior: contain;
 }
 
 .notifications-pop-up:popover-open
@@ -377,6 +380,7 @@
   top: anchor(top);
   right: anchor(left);
   margin-right: 15px;
+  overscroll-behavior: contain;
 }
 
 .profile-menu:popover-open
